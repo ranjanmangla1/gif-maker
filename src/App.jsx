@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './App.css';
 
 import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 
@@ -38,7 +39,7 @@ function App() {
 
   return ready ? (
     <div className="App">
-      <p>Welcome to gif maker</p>
+      <p className="heading">Welcome to gif maker</p>
       {
         video 
         && 

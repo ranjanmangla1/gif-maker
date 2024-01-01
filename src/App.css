@@ -1,0 +1,37 @@
+.App {
+    padding-top: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #007180, #1c8be0);
+    background-size: 400% 400%;
+    animation: bgAnimation 6s ease infinite;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.heading {
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
